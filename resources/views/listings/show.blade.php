@@ -22,9 +22,8 @@
                     <div class="text-lg space-y-6">
                         <p>{{ $listing->description }}</p>
 
-
                         <a href="mailto:{{ $listing->email }}"
-                            class="block bg-laravel text-white p-2 rounded-xl hover:opacity-80"><i
+                            class="block bg-primary text-white p-2 rounded-xl hover:opacity-80"><i
                                 class="fa-solid fa-envelope mr-2">
                             </i>{{ $listing->email }}
                         </a>
