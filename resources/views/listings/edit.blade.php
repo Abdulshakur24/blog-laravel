@@ -80,7 +80,7 @@
                 </label>
                 <input type="file" class="border border-gray-200 rounded p-2 w-full" name="logo" />
                 <img class="w-48 mr-6 mb-6"
-                    src="{{ asset($listing->logo != null ? 'storage/' . $listing->logo : 'images/no-image.png') }}"
+                    src="{{ asset($listing->logo != null ? 'storage/' . $listing->logo : 'images/no-image.svg') }}"
                     alt="" />
 
                 @error('logo')
