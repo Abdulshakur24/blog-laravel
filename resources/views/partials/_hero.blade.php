@@ -13,12 +13,10 @@
             @auth
             @else
                 <a href="/register"
-                    class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black">
+                    class="inline-block border-2 border-white text-white py-2 px-4 rounded transition ease-in-out uppercase mt-2 hover:opacity-70">
                     Sign
                     Up to List a post</a>
             @endauth
-
-
         </div>
     </div>
 </section>
