@@ -2,7 +2,6 @@
     <x-card class="p-10 max-w-lg mx-auto mt-24">
         <header class="text-center">
             <h2 class="text-2xl font-bold uppercase mb-1">Create A POST</h2>
-            {{-- <p class="mb-4">CREATE A POST</p> --}}
         </header>
 
         <form class="mt-4" method="POST" action="/listings" enctype="multipart/form-data">
