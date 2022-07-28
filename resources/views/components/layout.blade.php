@@ -16,27 +16,27 @@
             theme: {
                 extend: {
                     colors: {
-                        laravel: "#ef3b2d",
+                        primary: "#111",
                     },
                 },
             },
         };
     </script>
-    <title>LaraGigs | Find Laravel Jobs & Projects</title>
+    <title>Blogger</title>
 </head>
 
 <body class="max-w-[1440px] mx-auto">
     <x-flash-message />
     <nav class="flex justify-between items-center mb-4">
-        <a href="/"><img class=" w-16 lg:w-24" src="{{ asset('images/logo.png') }}" alt=""
-                class="logo" /></a>
+        <a href="/">
+            <img class=" w-16 lg:w-24" src="{{ asset('images/logo.svg') }}" alt="" class="logo" /></a>
         <ul class="flex space-x-6 mr-6 text-lg">
             @auth
                 <li>
-                    <span class="hidden md:block">Welcome {{ auth()->user()->name }}!</span>
+                    <span class="hidden md:block">Welcome {{ auth()->user()->name }}</span>
                 </li>
                 <li>
-                    <a href="/listings/manage" class="hover:text-laravel flex items-center">
+                    <a href="/listings/manage" class="hover:text-primary flex items-center">
                         <i class="fa-solid fa-gear mr-2"></i>
                         Manage
                     </a>
@@ -52,31 +52,30 @@
                 </li>
             @else
                 <li>
-                    <a href="/register" class="hover:text-laravel flex items-center">
+                    <a href="/register" class="hover:text-primary flex items-center">
                         <i class="fa-solid fa-user-plus mr-2 hidden md:block"></i>
                         Register
                     </a>
                 </li>
                 <li>
-                    <a href="/login" class="hover:text-laravel flex items-center">
+                    <a href="/login" class="hover:text-primary flex items-center">
                         <i class="fa-solid fa-arrow-right-to-bracket mr-2 hidden md:block"></i>
                         Login
                     </a>
                 </li>
-                @endif
-            </ul>
-        </nav>
+            @endauth
+        </ul>
+    </nav>
 
-        <main class="mb-20">
-            {{ $slot }}
-        </main>
+    <main class="mb-20">
+        {{ $slot }}
+    </main>
 
-        <footer
-            class="flex items-center justify-center max-w-[1440px] max-h-[40px] mx-auto fixed bottom-0 left-0 right-0 w-full font-bold bg-laravel text-white opacity-90">
-            <p class="ml-2 grow text-center">Copyright &copy; 2022, All Rights reserved</p>
+    <footer
+        class="flex items-center justify-center max-w-[1440px] max-h-[40px] mx-auto fixed bottom-0 left-0 right-0 w-full font-bold bg-primary text-white opacity-90">
+        <p class="ml-2 grow text-center">Copyright &copy; 2022, All Rights reserved</p>
+        <a href="/listings/create" class="bg-black text-white py-2 px-5">Post Job</a>
+    </footer>
+</body>
 
-            <a href="/listings/create" class="bg-black text-white py-2 px-5">Post Job</a>
-        </footer>
-    </body>
-
-    </html>
+</html>
