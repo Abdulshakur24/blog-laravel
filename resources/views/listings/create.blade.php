@@ -1,11 +1,11 @@
 <x-layout>
     <x-card class="p-10 max-w-lg mx-auto mt-24">
         <header class="text-center">
-            <h2 class="text-2xl font-bold uppercase mb-1">Create a Gig</h2>
-            <p class="mb-4">Post a gig to find a developer</p>
+            <h2 class="text-2xl font-bold uppercase mb-1">Create A POST</h2>
+            {{-- <p class="mb-4">CREATE A POST</p> --}}
         </header>
 
-        <form method="POST" action="/listings" enctype="multipart/form-data">
+        <form class="mt-4" method="POST" action="/listings" enctype="multipart/form-data">
             @csrf
             <div class="mb-6">
                 <label for="company" class="inline-block text-lg mb-2">Company Name</label>
@@ -98,7 +98,7 @@
 
             <div class="mb-6">
                 <button type="submit" class="bg-primary text-white rounded py-2 px-4 hover:bg-black">
-                    Create Gig
+                    Create
                 </button>
 
                 <a href="/" class="text-black ml-4"> Back </a>
