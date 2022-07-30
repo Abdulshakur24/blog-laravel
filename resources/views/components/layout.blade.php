@@ -27,7 +27,7 @@
 
 <body class="max-w-[1440px] mx-auto">
     <x-flash-message />
-    <nav class="flex justify-between items-center mb-4">
+    <nav class="flex justify-between items-center">
         <a href="/">
             <img class=" w-16 lg:w-24" src="{{ asset('images/logo.svg') }}" alt="" class="logo" /></a>
         <ul class="flex space-x-6 mr-6 text-lg">
@@ -71,11 +71,6 @@
         {{ $slot }}
     </main>
 
-    <footer
-        class="flex items-center justify-center max-w-[1440px] max-h-[40px] mx-auto fixed bottom-0 left-0 right-0 w-full font-bold bg-primary text-white opacity-90">
-        <p class="ml-2 grow text-center">All Rights reserved</p>
-        <a href="/listings/create" class="bg-black text-white py-2 px-5">Post Job</a>
-    </footer>
 </body>
 
 </html>
