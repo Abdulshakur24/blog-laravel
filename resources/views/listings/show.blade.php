@@ -48,4 +48,5 @@
             </form>
         </x-card> --}}
     </div>
+    @include('partials._footer')
 </x-layout>

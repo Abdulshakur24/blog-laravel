@@ -48,4 +48,5 @@
             </div>
         </div>
     </x-card>
+    @include('partials._footer')
 </x-layout>
